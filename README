@@ -1,0 +1,11 @@
+Just a simple OpenGL (Linux) demo for demoscene.
+
+To play a music, I have used a libmikmod library with data inlined into code (name your song as music.xm). E.g. I used this song: https://modarchive.org/index.php?request=view_by_moduleid&query=173085
+
+In very basic version, there is also used libglfw3 for window-key event management.
+
+To build a demo, just run ./build.sh
+
+For a rasterized font, Courier New Bold size 8 was used (burned with https://github.com/andryblack/fontbuilder and exported to code by a GIMP)
+
+As for now, I have achieved the size of 112288 bytes with using standard Ubuntu 16.06 gcc toolchain, but expect further size optimizations in future :)

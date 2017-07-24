@@ -1,0 +1,10 @@
+*.config
+*.creator
+*.user
+*.files
+*.includes
+music.xm
+music.inl
+courier_new_bold_8.inl
+demo
+*.autosave
