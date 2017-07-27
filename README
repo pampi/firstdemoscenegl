@@ -8,4 +8,6 @@ To build a demo, just run ./build.sh
 
 For a rasterized font, Courier New Bold size 8 was used (burned with https://github.com/andryblack/fontbuilder and exported to code by a GIMP)
 
-As for now, I have achieved the size of 112288 bytes with using standard Ubuntu 16.06 gcc toolchain, but expect further size optimizations in future :)
+As for now, I have achieved the size of 112288 bytes with using standard Ubuntu 16.04 gcc toolchain, but expect further size optimizations in future :)
+
+Step 2: Striping few sections, giving additional flags to compiler and making executable selfextracting leads to size 21140 bytes.

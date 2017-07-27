@@ -256,7 +256,9 @@ GLuint Demo::build_shader(const char *vs, const char *fs)
 #endif
 
         if(result==GL_TRUE)
+		  {
             glAttachShader(glProgramId, vertexShaderId);
+		  }
     }
 
     if(fs)
@@ -276,7 +278,9 @@ GLuint Demo::build_shader(const char *vs, const char *fs)
         printf("GLSL fragment compiler log: %s\n", szResult);
 #endif
         if(result==GL_TRUE)
+		  {
             glAttachShader(glProgramId, fragmentShaderId);
+		  }
     }
 
     glLinkProgram(glProgramId);
@@ -290,8 +294,14 @@ GLuint Demo::build_shader(const char *vs, const char *fs)
     printf("GLSL linking log: %s\n", szResult);
 #endif
 
-    if(vs) glDeleteShader(vertexShaderId);
-    if(fs) glDeleteShader(fragmentShaderId);
+	 if(vs)
+	 {
+		 glDeleteShader(vertexShaderId);
+	 }
+	 if(fs)
+	 {
+		 glDeleteShader(fragmentShaderId);
+	 }
 
     return glProgramId;
 }
